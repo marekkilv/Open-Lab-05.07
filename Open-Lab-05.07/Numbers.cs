@@ -6,7 +6,9 @@ namespace Open_Lab_05._07
     {
         public int[] RemoveSmallest(int[] nums)
         {
-            throw new NotImplementedException();
+            var list = nums.ToList();
+            list.Remove(nums.Min());
+            return list.ToArray();
         }
     }
 }
